@@ -1,0 +1,21 @@
+spring:
+  banner:
+    location: classpath:/banner/banner.txt
+  codec:
+    max-in-memory-size: 50MB
+feign:
+  pokemon:
+    name: pokemon
+    url: http://localhost:8082
+cache:
+  timeout: 1
+---
+application:
+  title: Pockemon APP
+  version: 0.0.1-SNAPSHOT
+---
+logging:
+  level:
+    root: INFO
+    com.alea: DEBUG
+    org.springframework.boot: INFO
